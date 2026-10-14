@@ -62,17 +62,12 @@ const email = 'himathcode100@gmail.com';
 >
 	<div class="site-shell">
 		<header class="topbar" id="top">
-			<a class="brand" href="#top" aria-label="Himath Bandara home">HB<span>.</span></a>
 			<nav aria-label="Main navigation">
 				<a href="#projects">Selected work</a>
 				<a href="#about">About</a>
 				<a href="#education">Education</a>
 				<a href="#skills">Skills</a>
 			</nav>
-			<div class="nav-right">
-				<span class="availability"><i></i> Open to opportunities</span>
-				<a class="nav-cta" href={`mailto:${email}`}>Let’s talk <span>↗</span></a>
-			</div>
 			<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
 		</header>
 
@@ -188,11 +183,11 @@ const email = 'himathcode100@gmail.com';
 	:global(html) { scroll-behavior: smooth; background: #fff; }
 	:global(body) { margin: 0; color: #20221f; font-family: Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
 	:global(a) { color: inherit; text-decoration: none; }
-	.site-shell { width: 100%; min-height: 100vh; margin: 0; background: #fff; overflow: hidden; }
-	.topbar { height: 78px; padding: 0 8.5%; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #f2f2ee; position: relative; z-index: 2; }
+	.site-shell { width: 100%; min-height: 100vh; margin: 0; background: #fff; }
+	.topbar { height: 78px; padding: 0 8.5%; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #f2f2ee; position: sticky; top: 0; z-index: 2; background: #fff; }
 	.brand { width: 34px; height: 34px; border-radius: 50%; background: #21231f; color: white; display: grid; place-items: center; font-size: 12px; font-weight: 700; letter-spacing: -.7px; }
 	.brand span { color: #c7ed82; }
-	.topbar nav { display: flex; gap: 34px; margin-left: 5%; margin-right: auto; padding-left: 34px; }
+	.topbar nav { display: flex; gap: 34px; margin: 0; padding: 0; }
 	.topbar nav a, .nav-cta { font-size: 11px; font-weight: 600; }
 	.topbar nav a { color: #656761; transition: color .2s; }
 	.topbar nav a:hover, .social-links a:hover { color: #7da541; }
@@ -288,5 +283,7 @@ const email = 'himathcode100@gmail.com';
 		.section-label { font-size: 9px; flex-wrap: wrap; gap: 8px 14px; }
 		.item-top span, .project-meta, .project-bottom, .credential-top > span { font-size: 9px; }
 		.footer span { font-size: 9px; }
+		.topbar nav.nav-open { align-items: center; }
 	}
+	@media (min-width: 621px) and (max-width: 850px) { .topbar nav { padding-left: 0; } }
 </style>
