@@ -14,12 +14,12 @@ const projects = [
 	},
 	{
 		number: '02',
-		name: 'ImpactHub',
-		kind: 'Web app · Social impact',
+		name: 'LifeLink',
+		kind: 'Mobile app · Health',
 		description:
-			'A fundraising platform that helps NGOs create campaigns and gives supporters a simple way to discover causes, donate, and follow campaign progress.',
-		stack: 'Next.js · TypeScript · SQLite · Turso',
-		note: 'Campaigns, donations & tracking',
+			'A cross-platform blood donation app connecting donors with nearby campaigns. Features include location-aware discovery, donor registration, and real-time updates for emergency and routine drives.',
+		stack: 'Flutter · Dart · Supabase · PostgreSQL',
+		note: 'Real-time, location-aware campaigns',
 		style: 'peach',
 	},
 	{
@@ -46,7 +46,7 @@ const projects = [
 
 const skillGroups = [
 	{ label: 'Languages', value: 'JavaScript, TypeScript, Python, Java, C, C#, Dart, SQL' },
-	{ label: 'Frontend', value: 'React, Next.js, Flutter, Tailwind CSS' },
+	{ label: 'Frontend', value: 'React, Next.js, Flutter, mobile applications, Tailwind CSS' },
 	{ label: 'Backend', value: 'Node.js, Express.js, Spring Boot, Hono.js' },
 	{ label: 'Data', value: 'PostgreSQL, MySQL, MongoDB, Supabase, SQLite, Turso' },
 	{ label: 'AI / ML', value: 'OpenAI API, RAG, embeddings, semantic search, AI agents, Google ADK, machine learning, model validation, decision trees, random forests, NumPy, Pandas, scikit-learn' },
@@ -98,7 +98,6 @@ const email = 'himathcode100@gmail.com';
 					</div>
 					<div class="hero-meta"><span>BASED IN SRI LANKA</span><span>AVAILABLE FOR THE RIGHT OPPORTUNITY</span></div>
 				</div>
-				<div class="hero-stamp" aria-hidden="true"><span>BUILD</span><b>✳</b><span>WITH INTENT</span></div>
 			</section>
 
 			<section class="proof section-tint" id="about" aria-label="Background and leadership">
@@ -116,11 +115,11 @@ const email = 'himathcode100@gmail.com';
 						</article>
 						<article class="timeline-item">
 							<div class="timeline-icon">↗</div>
-							<div><div class="item-top"><h3>Pandora Builderthon</h3><span>EVENT WEBSITE</span></div><p>Next.js · Association event</p><p class="item-detail">Worked with the development team on the official event website, leading the participant registration flow and helping organize the Builderthon.</p></div>
+							<div><div class="item-top"><h3>Pandora Builderthon</h3><span>EVENT WEBSITE</span></div><p>Next.js · MongoDB</p><p class="item-detail">As part of the Association of Software Engineering (ASE) at NSBM Green University, worked with the team on the official event website, led participant registration, and helped organize the Builderthon.</p></div>
 						</article>
 						<article class="timeline-item">
 							<div class="timeline-icon">✦</div>
-							<div><div class="item-top"><h3>GreenExE 4.0</h3><span>REGISTRATION PLATFORM</span></div><p>Laravel · Blade · Tailwind CSS · Supabase</p><p class="item-detail">Collaborated on the official Smart Green City competition platform, developing project and team registration for the Association of Software Engineering at NSBM.</p></div>
+							<div><div class="item-top"><h3>GreenExE 4.0</h3><span>REGISTRATION PLATFORM</span></div><p>Laravel · Blade · Tailwind CSS · Supabase PostgreSQL</p><p class="item-detail">As part of the Association of Software Engineering (ASE) at NSBM Green University, collaborated on the official Smart Green City competition platform and developed project and team registration.</p></div>
 						</article>
 					</div>
 				</div>
@@ -128,7 +127,7 @@ const email = 'himathcode100@gmail.com';
 
 			<section class="projects-section" id="projects">
 				<div class="section-label"><span>02 / SELECTED WORK</span><span>Academic & personal projects</span></div>
-				<div class="section-heading"><h2>Things I’ve<br /><span>helped bring to life.</span></h2><p>A selection of products and experiments—each one a chance to solve a real problem and learn something new.</p></div>
+				<div class="section-heading"><h2>Things I’ve<br /><span>helped bring to life.</span></h2><p>A few projects built to solve problems and learn by doing.</p></div>
 				<div class="project-list">
 					{projects.map((project) => (
 						<article class="project-row">
@@ -145,7 +144,7 @@ const email = 'himathcode100@gmail.com';
 			<section class="education-section section-tint" id="education">
 				<div class="section-label"><span>03 / EDUCATION &amp; CERTIFICATIONS</span><span>Learning in practice</span></div>
 				<div class="education-grid">
-					<div class="education-intro"><p class="eyebrow">EDUCATION</p><h2>Building a strong<br /><span>technical foundation.</span></h2><article class="degree-card"><div class="degree-mark">NSBM</div><div><h3>BSc (Hons) Software Engineering</h3><p>NSBM Green University</p><span>Undergraduate · Expected graduation 2027</span></div></article></div>
+					<div class="education-intro"><p class="eyebrow">EDUCATION</p><h2>Building a strong<br /><span>technical foundation.</span></h2><article class="degree-card"><div class="degree-mark">UP</div><div><h3>BSc (Hons) Software Engineering</h3><p>University of Plymouth</p><span>Undergraduate · Expected graduation 2027</span></div></article><article class="degree-card"><div class="degree-mark">SD</div><div><h3>Sri Dharmaloka College</h3><p>School education</p></div></article></div>
 					<div class="credentials"><p class="eyebrow">CERTIFICATIONS &amp; TRAINING</p>
 						<article class="credential"><div class="credential-top"><h3>Intro to Machine Learning</h3><span>SEP 2026</span></div><p>Kaggle</p><p class="credential-copy">Hands-on practice with data exploration, model validation, underfitting and overfitting, decision trees, and random forests.</p><div class="tags"><span>Machine Learning</span><span>Model Validation</span><span>Scikit-learn</span></div></article>
 						<article class="credential"><div class="credential-top"><h3>The AI Engineer Path</h3><span>MAY 2026</span></div><p>Scrimba</p><p class="credential-copy">Practical training in building AI-powered apps with modern AI tools, APIs, and machine learning.</p><div class="tags"><span>AI Engineering</span><span>Vector Embeddings</span><span>Agentic AI</span></div></article>
@@ -223,8 +222,6 @@ const email = 'himathcode100@gmail.com';
 	.button-dark span { color: #c7ed82; }
 	.button-light { border: 1px solid #e7e8e2; }
 	.hero-meta { margin-top: 51px; padding-top: 13px; border-top: 1px solid #ededeb; display: flex; justify-content: space-between; color: #a2a49c; font-size: 8px; letter-spacing: .07em; }
-	.hero-stamp { position: absolute; right: 5%; bottom: 32px; width: 70px; height: 70px; border: 1px solid #e8e9e2; border-radius: 50%; color: #94978d; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 6px; letter-spacing: .13em; transform: rotate(-12deg); }
-	.hero-stamp b { font-size: 19px; line-height: 1.15; color: #a7bd82; }
 	.section-tint { background: #f5f5f1; }
 	.proof, .projects-section, .education-section, .skills-section { padding: 36px 15% 80px; }
 	.section-label { display: flex; justify-content: space-between; padding-bottom: 19px; border-bottom: 1px solid #e5e6df; color: #85877f; font-size: 8px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
@@ -258,11 +255,38 @@ const email = 'himathcode100@gmail.com';
 	.education-section { padding-top: 36px; padding-bottom: 70px; }
 	.education-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 10%; padding-top: 48px; }
 	.education-intro h2 { font-size: clamp(27px, 3vw, 38px); line-height: 1.13; letter-spacing: -.065em; font-weight: 500; margin-bottom: 26px; }.education-intro h2 span { color: #a9ad9f; }
-	.degree-card { display: grid; grid-template-columns: 38px 1fr; gap: 13px; align-items: start; padding: 16px; background: white; border: 1px solid #e9eae4; border-radius: 5px; }.degree-mark { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: #242620; color: #d6e8b6; font-size: 8px; font-weight: 700; }.degree-card h3, .credential h3 { font-size: 11px; margin: 1px 0 5px; font-weight: 600; }.degree-card p, .credential > p { color: #767870; font-size: 9px; margin: 0 0 6px; }.degree-card span { color: #999b93; font-size: 8px; line-height: 1.5; }
+	.degree-card { display: grid; grid-template-columns: 38px 1fr; gap: 13px; align-items: start; padding: 0; margin-bottom: 20px; background: transparent; border: 0; border-radius: 0; }.degree-mark { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: #242620; color: #d6e8b6; font-size: 8px; font-weight: 700; }.degree-card h3, .credential h3 { font-size: 11px; margin: 1px 0 5px; font-weight: 600; }.degree-card p, .credential > p { color: #767870; font-size: 9px; margin: 0 0 6px; }.degree-card span { color: #999b93; font-size: 8px; line-height: 1.5; }
 	.credentials > .eyebrow { margin-bottom: 17px; }.credential { padding: 0 0 17px; margin-bottom: 16px; border-bottom: 1px solid #e2e3dc; }.credential:last-child { margin-bottom: 0; }.credential-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }.credential-top > span { flex: 0 0 auto; color: #92948b; font-size: 7px; letter-spacing: .07em; }.credential-copy { color: #888a82 !important; font-size: 9px !important; line-height: 1.65; max-width: 480px; }.tags { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 9px; }.tags span { padding: 5px 7px; border-radius: 20px; background: #e9ebe4; color: #64675e; font-size: 7px; }
 	.skills-section { padding-top: 36px; padding-bottom: 72px; }.skills-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 12%; padding-top: 50px; }.skills-grid h2 { margin-bottom: 17px; }.skill-row { display: grid; grid-template-columns: 100px 1fr; gap: 16px; padding: 13px 0; border-bottom: 1px solid #e2e3dc; }.skill-row:first-child { padding-top: 0; }.skill-row h3 { font-size: 10px; margin: 0; font-weight: 600; }.skill-row p { font-size: 9px; color: #777970; line-height: 1.6; margin: 0; }
 	.contact-section { padding: 66px 15% 25px; background: #23251f; color: white; }.contact-section .eyebrow { color: #c5c8bb; }.contact-main { display: flex; align-items: end; justify-content: space-between; padding: 22px 0 48px; }.contact-main h2 { font-size: clamp(38px, 6vw, 72px); line-height: .99; letter-spacing: -.075em; font-weight: 500; margin: 0; }.contact-main h2 span { color: #9fa395; }.contact-button { width: 54px; height: 54px; border-radius: 50%; background: #c4e58c; color: #24261f; display: grid; place-items: center; font-size: 23px; transition: transform .2s; }.contact-button:hover { transform: rotate(45deg); }.contact-foot { border-top: 1px solid #ffffff26; padding-top: 14px; display: flex; justify-content: space-between; color: #c4c6bb; font-size: 9px; }.contact-foot a { color: white; }.footer { padding: 17px 8.5%; display: flex; align-items: center; justify-content: space-between; background: #1c1e19; color: #a9aba2; font-size: 8px; }.footer .brand { width: 27px; height: 27px; font-size: 10px; }.footer a:last-child { color: #dadbd4; }
 	@media (min-width: 1200px) { .hero { min-height: 480px; } .project-art { min-height: 270px; } }
 	@media (max-width: 850px) { .site-shell { margin: 0 auto; }.topbar { padding: 0 6%; }.topbar nav { gap: 18px; padding-left: 20px; }.nav-right { gap: 11px; }.availability { display: none; }.hero { padding-left: 10%; padding-right: 10%; }.proof, .projects-section, .education-section, .skills-section, .contact-section { padding-left: 9%; padding-right: 9%; }.proof-grid, .education-grid { gap: 6%; } }
-	@media (max-width: 620px) { .topbar { height: 64px; }.topbar nav { display: none; position: absolute; top: 63px; left: 0; right: 0; margin: 0; padding: 18px 6%; background: white; border-bottom: 1px solid #eee; flex-direction: column; gap: 18px; }.topbar nav.nav-open { display: flex; }.nav-cta { padding: 10px 11px; font-size: 10px; }.menu-toggle { display: grid; place-items: center; margin-left: 10px; width: 34px; height: 34px; border: 1px solid #eee; border-radius: 4px; color: #333; background: white; font-size: 15px; }.hero { min-height: 0; padding: 65px 8% 61px; display: block; }.hero h1 { font-size: clamp(46px, 13vw, 64px); }.hero-foot { margin-top: 28px; }.hero-summary { margin-top: 52px; padding-top: 26px; border-top: 1px solid #edede9; }.hero-kicker { font-size: 29px; }.hero-meta { margin-top: 33px; font-size: 7px; }.hero-stamp { width: 60px; height: 60px; right: 7%; bottom: 46%; }.proof, .projects-section, .education-section, .skills-section { padding: 28px 7% 55px; }.section-label { font-size: 7px; }.proof-grid, .skills-grid, .education-grid { display: block; padding-top: 34px; }.proof-intro, .education-intro { margin-bottom: 34px; }.proof h2, .section-heading h2, .skills-grid h2, .education-intro h2 { font-size: 32px; }.timeline-item { grid-template-columns: 30px 1fr; gap: 11px; }.timeline-icon { width: 29px; height: 29px; }.item-top { align-items: start; flex-direction: column; gap: 5px; }.item-top span { font-size: 7px; }.section-heading { display: block; padding: 32px 0 20px; }.section-heading > p { margin: 15px 0 0; }.project-row { display: flex; flex-direction: column; align-items: stretch; gap: 18px; padding: 18px 0 24px; }.project-art { min-height: 215px; }.art-window { width: 72%; }.project-info h3 { font-size: 25px; margin-top: 14px; }.project-meta { font-size: 7px; }.project-bottom { margin-top: 12px; }.credential-top { align-items: flex-start; }.credentials { margin-top: 35px; }.skill-list { margin-top: 31px; }.skill-row { grid-template-columns: 76px 1fr; gap: 10px; }.contact-section { padding: 53px 7% 20px; }.contact-main { padding: 18px 0 38px; }.contact-main h2 { font-size: clamp(38px, 11vw, 57px); }.contact-button { width: 43px; height: 43px; font-size: 18px; flex: 0 0 auto; margin-left: 10px; }.contact-foot { gap: 10px; flex-direction: column; }.footer { padding: 15px 6%; }.footer span { font-size: 7px; } }
+	@media (max-width: 620px) { .topbar { height: 64px; }.topbar nav { display: none; position: absolute; top: 63px; left: 0; right: 0; margin: 0; padding: 18px 6%; background: white; border-bottom: 1px solid #eee; flex-direction: column; gap: 18px; }.topbar nav.nav-open { display: flex; }.nav-cta { padding: 10px 11px; font-size: 10px; }.menu-toggle { display: grid; place-items: center; margin-left: 10px; width: 34px; height: 34px; border: 1px solid #eee; border-radius: 4px; color: #333; background: white; font-size: 15px; }.hero { min-height: 0; padding: 65px 8% 61px; display: block; }.hero h1 { font-size: clamp(46px, 13vw, 64px); }.hero-foot { margin-top: 28px; }.hero-summary { margin-top: 52px; padding-top: 26px; border-top: 1px solid #edede9; }.hero-kicker { font-size: 29px; }.hero-meta { margin-top: 33px; font-size: 7px; }.proof, .projects-section, .education-section, .skills-section { padding: 28px 7% 55px; }.section-label { font-size: 7px; }.proof-grid, .skills-grid, .education-grid { display: block; padding-top: 34px; }.proof-intro, .education-intro { margin-bottom: 34px; }.proof h2, .section-heading h2, .skills-grid h2, .education-intro h2 { font-size: 32px; }.timeline-item { grid-template-columns: 30px 1fr; gap: 11px; }.timeline-icon { width: 29px; height: 29px; }.item-top { align-items: start; flex-direction: column; gap: 5px; }.item-top span { font-size: 7px; }.section-heading { display: block; padding: 32px 0 20px; }.section-heading > p { margin: 15px 0 0; }.project-row { display: flex; flex-direction: column; align-items: stretch; gap: 18px; padding: 18px 0 24px; }.project-art { min-height: 215px; }.art-window { width: 72%; }.project-info h3 { font-size: 25px; margin-top: 14px; }.project-meta { font-size: 7px; }.project-bottom { margin-top: 12px; }.credential-top { align-items: flex-start; }.credentials { margin-top: 35px; }.skill-list { margin-top: 31px; }.skill-row { grid-template-columns: 76px 1fr; gap: 10px; }.contact-section { padding: 53px 7% 20px; }.contact-main { padding: 18px 0 38px; }.contact-main h2 { font-size: clamp(38px, 11vw, 57px); }.contact-button { width: 43px; height: 43px; font-size: 18px; flex: 0 0 auto; margin-left: 10px; }.contact-foot { gap: 10px; flex-direction: column; }.footer { padding: 15px 6%; }.footer span { font-size: 7px; } }
+
+	/* Keep supporting text comfortably readable across desktop and mobile. */
+	.topbar nav a, .nav-cta { font-size: 13px; }
+	.availability { font-size: 11px; }
+	.eyebrow { font-size: 11px; }
+	.social-links { font-size: 13px; }
+	.hero-foot > p, .section-heading > p, .hero-copy { font-size: 14px; }
+	.button { font-size: 13px; }
+	.hero-meta, .section-label { font-size: 10px; }
+	.item-top h3 { font-size: 15px; }
+	.item-top span, .project-meta, .project-bottom { font-size: 10px; }
+	.timeline-item p { font-size: 13px; }
+	.timeline-item .item-detail, .credential-copy { font-size: 12px !important; }
+	.project-info > p { font-size: 13px; }
+	.degree-card h3, .credential h3 { font-size: 14px; }
+	.degree-card p, .credential > p { font-size: 12px; }
+	.degree-card span { font-size: 11px; }
+	.credential-top > span, .tags span { font-size: 10px; }
+	.skill-row h3 { font-size: 13px; }
+	.skill-row p { font-size: 12px; }
+	.contact-foot { font-size: 12px; }
+	.footer { font-size: 10px; }
+	@media (max-width: 620px) {
+		.section-label { font-size: 9px; flex-wrap: wrap; gap: 8px 14px; }
+		.item-top span, .project-meta, .project-bottom, .credential-top > span { font-size: 9px; }
+		.footer span { font-size: 9px; }
+	}
 </style>
